@@ -4,6 +4,7 @@ threadpool
 A C++11 threadpool trivial implementation
 
 Simplified declaration
+----------------------
 ```c++
 class threadpool
 {
@@ -14,15 +15,18 @@ class threadpool
 ```
 
 Example
+-------
 ```c++
-threadpool	pool(4); // 4 threads
+int			main(void)
+{
+	threadpool	pool(4);
 
-auto		future1 = pool.push(A);
-auto		future2 = pool.push(B, 42);
+	auto		future1 = pool.push(A);
+	auto		future2 = pool.push(B, 42);
 
-out << future1.get()
-	<< future2.get()
-	<< endl
+	result1 = future1.get();
+	result2 = future2.get();
+}
 ```
 
 ##Compilation
