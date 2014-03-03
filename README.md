@@ -3,7 +3,7 @@ threadpool
 
 A C++11 threadpool trivial implementation
 
-###Simplified declaration
+####Simplified declaration
 ```c++
 class threadpool
 {
@@ -13,7 +13,7 @@ class threadpool
 };
 ```
 
-###Example
+####Example
 ```c++
 int			main(void)
 {
