@@ -9,7 +9,7 @@ class threadpool
 {
 	constructor(size_type N);		 // creates a thread pool with N waiting threads
 
-	std::future<R>	push(const T& function); // schedules a new task
+	std::future			push<F>(const F& function); // schedules a new task
 };
 ```
 
