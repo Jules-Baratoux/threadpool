@@ -7,11 +7,9 @@ A C++11 threadpool trivial implementation
 ```c++
 class threadpool
 {
-	threadpool(size_type N); // creates a thread pool with N waiting threads
+	explicit threadpool(size_type N); // creates a thread pool with N waiting threads
 
-
-	std::future	push<F      >(const F& function); // schedules a new task
-	std::future	push<F, A...>(const F& function, A... args);
+	std::future	push(const F& function, A... args); // schedules a new task
 };
 ```
 
