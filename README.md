@@ -1,7 +1,7 @@
 threadpool
 ==========
 
-A C++11 threadpool trivial implementation
+A trivial threadpool implementation using C++11
 
 **Simplified declaration**
 ```c++
