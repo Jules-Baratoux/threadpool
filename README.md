@@ -27,13 +27,13 @@ int B(int val)
 
 int main(void)
 {
-	threadpool	pool(4);
-
-	auto		future1 = pool.push(A);
-	auto		future2 = pool.push(B, 42);
-
-	char		result1 = future1.get();
-	int		result2 = future2.get();
+	threadpool pool(4);
+	
+	auto       future1 = pool.push(A);
+	auto       future2 = pool.push(B, 42);
+	
+	char       result1 = future1.get();
+	int        result2 = future2.get();
 }
 ```
 
