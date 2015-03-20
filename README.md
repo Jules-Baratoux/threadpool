@@ -15,17 +15,17 @@ class threadpool
 
 **Example**
 ```c++
-char			A(void)
+char A(void)
 {
 	return 'A';
 }
 
-int			B(int val)
+int B(int val)
 {
 	return val;
 }
 
-int			main(void)
+int main(void)
 {
 	threadpool	pool(4);
 
