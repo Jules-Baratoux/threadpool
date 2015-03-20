@@ -15,7 +15,7 @@ class threadpool
 
 **Example**
 ```c++
-int			A(void)
+char			A(void)
 {
 	return 'A';
 }
@@ -32,7 +32,7 @@ int			main(void)
 	auto		future1 = pool.push(A);
 	auto		future2 = pool.push(B, 42);
 
-	int		result1 = future1.get();
+	char		result1 = future1.get();
 	int		result2 = future2.get();
 }
 ```
